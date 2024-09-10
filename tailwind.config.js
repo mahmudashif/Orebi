@@ -13,6 +13,7 @@ export default {
     },
     colors: {
       'primaryBg': '#979797',
+      'secondaryBg': '#262626',
     },
   },
   plugins: [],
