@@ -1,6 +1,7 @@
 import Container from "../Container";
 import Dropdown from "../Dropdown";
 import React, { useState } from "react";
+import SearchBox from "./SearchBox";
 
 const Header = () => {
   let [show, setShow] = useState(false);
@@ -10,9 +11,9 @@ const Header = () => {
   };
 
   return (
-    <div className="bg-[#F5F4F3]">
+    <div className="bg-[#F5F4F3] py-6">
       <Container>
-        <div className="flex justify-between">
+        <div className="flex justify-between items-center">
           <div className="">
             <Dropdown className="relative" onClick={showDropdown}>
               <div className="flex relative items-center gap-x-2.5">
@@ -23,7 +24,7 @@ const Header = () => {
                 />
                 <p className="cursor-pointer">Shop by Category</p>
                 {show && (
-                  <ul className="absolute mt-[380px] ml-10 text-primaryBg bg-secondaryBg w-[263px]">
+                  <ul className="absolute mt-[420px] ml-10 text-primaryBg bg-secondaryBg w-[263px]">
                     <li className="px-5 py-4 hover:text-[#ffffff] border border-solid border-[#2D2D2D] hover:ml-4">
                       Accesories
                     </li>
@@ -47,8 +48,12 @@ const Header = () => {
               </div>
             </Dropdown>
           </div>
-          <div>b</div>
-          <div>c</div>
+
+          <div className="items-center">
+            <SearchBox />
+          </div>
+
+          <div className="items-center">c</div>
         </div>
       </Container>
     </div>
