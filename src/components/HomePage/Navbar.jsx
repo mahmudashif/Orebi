@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { HiOutlineBars3 } from "react-icons/hi2";
 import { RxCross1 } from "react-icons/rx";
+import logo from "/src/assets/logo.svg"
 
 const Navbar = () => {
   const [show, setShow] = useState(false);
@@ -11,7 +12,7 @@ const Navbar = () => {
   return (
     <section className="container px-8 py-8 mx-auto flex">
       <div className="w-3/12">
-        <img src="/src/assets/logo.svg" alt="" />
+        <img src={logo} alt="" />
       </div>
       <div className="w-9/12">
         {show ? <RxCross1 onClick={abc} /> : <HiOutlineBars3 onClick={abc} />}
