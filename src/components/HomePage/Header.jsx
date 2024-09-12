@@ -72,7 +72,7 @@ const Header = () => {
 
           <div className="items-center flex gap-x-10">
             <div>
-              <Dropdown onClick={profileDropdown} className="relative">
+              <Dropdown onClick={profileDropdown} className="relative cursor-pointer">
                 <img src="/src/assets/headerUserIcon.svg" alt="" />
                 {profileShow && (
                   <div className="absolute mt-11 ml-3">
@@ -88,7 +88,7 @@ const Header = () => {
             </div>
 
             <div>
-              <Dropdown onClick={cartDropdown} className="relative">
+              <Dropdown onClick={cartDropdown} className="relative cursor-pointer">
               <img src="/src/assets/headerCartIcon.svg" alt="" />
               {cartShow && (
                 <div className="absolute mt-11 ml-[-340px]">
