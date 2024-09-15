@@ -1,8 +1,7 @@
 import React from "react";
-import Container from "../Container";
+import Container from '../../components/Container.jsx'
 import add1 from "/src/assets/ad1.svg";
 import add2 from "/src/assets/ad2.svg";
-import Button from "../Button";
 
 const Advertise = () => {
   return (

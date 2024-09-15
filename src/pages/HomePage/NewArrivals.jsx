@@ -1,5 +1,5 @@
 import React from "react";
-import Container from "../Container";
+import Container from '../../components/Container.jsx'
 import NewArrival1 from "/src/assets/NewArrival1.svg";
 import NewArrival2 from "/src/assets/NewArrival2.svg";
 import NewArrival3 from "/src/assets/NewArrival3.svg";
@@ -8,9 +8,9 @@ import NewArrival5 from "/src/assets/NewArrival5.svg";
 import NewArrival6 from "/src/assets/NewArrival6.svg";
 import NewArrival7 from "/src/assets/NewArrival7.svg";
 import NewArrival8 from "/src/assets/NewArrival8.svg";
-import Heading from "../Heading";
-import Badge from "../Badge";
-import WishListHover from "../WishListHover";
+import Heading from "../../components/Heading.jsx";
+import Badge from "../../components/Badge.jsx";
+import WishListHover from "../../components/WishListHover.jsx";
 
 const NewArrivals = () => {
   return (

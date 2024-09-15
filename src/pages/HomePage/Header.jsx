@@ -1,5 +1,5 @@
-import Container from "../Container";
-import Dropdown from "../Dropdown";
+import Container from '../../components/Container.jsx'
+import Dropdown from "../../components/Dropdown.jsx";
 import React, { useState } from "react";
 import SearchBox from "./SearchBox";
 import { RxCross1 } from "react-icons/rx";

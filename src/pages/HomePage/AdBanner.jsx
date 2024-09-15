@@ -1,6 +1,6 @@
 import React from "react";
 import ad_banner from "/src/assets/AdBanner.svg";
-import Container from "../Container";
+import Container from '../../components/Container.jsx'
 
 const AdBanner = () => {
   return (

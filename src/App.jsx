@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 
 
-import Landing from "./components/HomePage/Landing";
+import Landing from "./pages/HomePage/Landing.jsx";
 
 
 let router = createBrowserRouter(
