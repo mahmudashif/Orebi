@@ -5,6 +5,7 @@ import Banner from './Banner'
 import Advertise from './Advertise'
 import NewArrivals from './NewArrivals'
 import AdBanner from './AdBanner'
+import SpecialOffer from './SpecialOffer'
 
 const Landing = () => {
   return (
@@ -15,6 +16,7 @@ const Landing = () => {
     <Advertise/>
     <NewArrivals/>
     <AdBanner/>
+    <SpecialOffer/>
     </>
   )
 }
