@@ -1,15 +1,13 @@
 import React from 'react'
-import banner from '/src/assets/banner.svg'
-import information from '/src/assets/information.svg'
 
 const Banner = () => {
   return (
     <>
     <div>
-        <img src={banner} alt="" />
+        <img src="/src/assets/banner.svg" alt="" />
     </div>
     <div>
-        <img src={information} alt="" />
+        <img src="/src/assets/information.svg" alt="" />
     </div>
     </>
   )
