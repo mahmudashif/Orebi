@@ -40,15 +40,17 @@ const Navbar = () => {
   return (
     <Container>
       <div className="px-8 py-8 mx-auto flex items-center justify-between">
-        <div>
+        <div className="w-full">
           <img src={logo} alt="" />
         </div>
+
+
         <div className="max-lg:hidden">
           <ul className="flex gap-x-20">
             {navbarData.map((item, index) => (
               <li
                 key={index}
-                className=" py-1 text-black transition-all duration-200 ease-in-out hover:text-primaryColor"
+                className="py-1 text-black transition-all duration-200 ease-in-out hover:text-primaryColor"
               >
                 <a href={item.href} key={index}>
                   {item.navitem}
@@ -60,17 +62,17 @@ const Navbar = () => {
 
 
         {show ? (
-          <RxCross1 onClick={navShow} className="lg:hidden absolute right-8" />
+          <RxCross1 onClick={navShow} className="lg:hidden absolute right-8 cursor-pointer z-20 text-[#ffff] text-2xl" />
         ) : (
-          <HiOutlineBars3 onClick={navShow} className="lg:hidden absolute right-8" />
+          <HiOutlineBars3 onClick={navShow} className="lg:hidden absolute right-8 cursor-pointer z-20 text-2xl" />
         )}
         {show && (
-          <div className="lg:hidden relative z-50 bg-secondaryBg w-full">
-            <ul className="lg:flex gap-x-20 absolute pt-5 p-[100%] h-[100dvh] bg-secondaryBg text-[#ffff]">
+          <div className="lg:hidden">
+            <ul className="lg:flex absolute z-10 top-0 right-0 w-[100%] text-[#ffff] bg-secondaryBg h-[100dvh]">
               {navbarData.map((item, index) => (
                 <li
                   key={index}
-                  className=" py-1 text-black transition-all duration-200 ease-in-out hover:text-primaryColor"
+                  className="mt-20 ml-48"
                 >
                   <a href={item.href} key={index}>
                     {item.navitem}
