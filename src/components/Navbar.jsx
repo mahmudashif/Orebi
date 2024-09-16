@@ -68,11 +68,11 @@ const Navbar = () => {
         )}
         {show && (
           <div className="lg:hidden">
-            <ul className="lg:flex absolute z-10 top-0 right-0 w-[100%] text-[#ffff] bg-secondaryBg h-[100dvh]">
+            <ul className="lg:flex absolute z-10 top-0 right-0 w-[50%] text-[#ffff] bg-secondaryBg h-[100dvh]">
               {navbarData.map((item, index) => (
                 <li
                   key={index}
-                  className="mt-20 ml-48"
+                  className="mt-20  ml-20"
                 >
                   <a href={item.href} key={index}>
                     {item.navitem}
